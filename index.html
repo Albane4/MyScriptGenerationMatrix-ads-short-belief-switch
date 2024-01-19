@@ -19,7 +19,7 @@
     <input type="text" id="solutionEfficace" name="solutionEfficace"><br><br>
       
     <label for="imagedAncrage">Comment peut-on ancrer ce message par une image forte ? (exemple : “parler de ‘casser’ les choses”/label><br>
-    <input type="text" id="solutionInefficace" name="solutionInefficace"><br>
+    <input type="text" id="imagedAncrage" name="imagedAncrage"><br>
 
     <label for="descriptionAncrage">Développez l'ancrage ("il faut (...)", "c'est exactement comme (...)")</label><br>
     <input type="text" id="descriptionAncrage" name="descriptionAncrage"><br><br>
@@ -35,7 +35,7 @@
     <p id="histoire"></p>
 
     <script>
-    function creerHistoire() {
+    function creerArgumentaire() {
       var sousObjectifDeLaCible = document.getElementById("sousObjectifDeLaCible").value;
       var solutionInefficace = document.getElementById("solutionInefficace").value;
       var pourquoiInefficaceFait = document.getElementById("pourquoiInefficaceFait").value;
@@ -62,7 +62,7 @@
       // texte = texte.replace(/\[qualité 1\]/g, "votre texte ici");
       // ...
 
-      document.getElementById("histoire").innerText = texte;
+      document.getElementById("argumentaire").innerText = texte;
     }
     </script>
 </body>
