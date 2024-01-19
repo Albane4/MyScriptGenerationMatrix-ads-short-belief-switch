@@ -6,27 +6,32 @@
 <body>
   <h2>Création de script pour Ads de type : short / "c'est pas comme ça c'est comme ça" / belief and action switch</h2><label for="sousObjectifDeLaCible">Quel est le sous-objectif que votre cible souhaite atteindre ? (exemple : "que l'homme qu'elles désirent change son comportement - et qu'elles aient plus de contrôle dans la relation")</label><br>
   <input type="text" id="sousObjectifDeLaCible" name="sousObjectifDeLaCible"><br>
-  <label for="solutionInefficace">Quelle est l’action ou la réponse la plus habituellement appliquée par votre cible pour atteindre cet objectif ? (exemple : "lui demander de changer")/label&gt;<br>
+  <label for="solutionInefficace">Question : quelle est l’action ou la réponse la plus habituellement appliquée par votre cible pour atteindre cet objectif ?
+    Exemple : "lui demander de changer"/label&gt;<br>
   <input type="text" id="solutionInefficace" name="solutionInefficace"><br>
-  <label for="pourquoiInefficaceFait">Pourquoi l’action ou la réponse habituelle ne fonctionne-t-elle pas ? (exemple : “parce que les hommes sont orientés vers l’action, contrairement aux femmes qui sont plus orientées vers les mots”)</label><br>
+  <label for="pourquoiInefficaceFait">Question : pourquoi l’action ou la réponse habituelle ne fonctionne-t-elle pas ?
+    Exemple : “parce que les hommes sont orientés vers l’action, contrairement aux femmes qui sont plus orientées vers les mots”</label><br>
   <input type="text" id="pourquoiInefficaceFait" name="pourquoiInefficaceFait"><br>
   <br>
-  <label for="solutionEfficace">Quelle est la vraie solution ou l’approche efficace pour atteindre l’objectif ? (exemple : “il faut prendre une action concrète, comme priver d’attention”)</label><br>
+  <label for="solutionEfficace">Question : quelle est la vraie solution ou l’approche efficace pour atteindre l’objectif ?
+    Exemple : “il faut prendre une action concrète, comme priver d’attention”</label><br>
   <input type="text" id="solutionEfficace" name="solutionEfficace"><br>
   <br>
-  <label for="imagedAncrage">Comment peut-on ancrer ce message par une image forte ? (exemple : “parler de ‘casser’ les choses”/label&gt;<br>
+  <label for="imagedAncrage">Question : comment peut-on ancrer ce message par une image forte ?
+    Exemple : “parler de ‘casser’ les choses”</label><br>
   <input type="text" id="imagedAncrage" name="imagedAncrage"><br>
   <label for="descriptionAncrage">Développez l'ancrage ("il faut (...)", "c'est exactement comme (...)")</label><br>
   <input type="text" id="descriptionAncrage" name="descriptionAncrage"><br>
   <br>
-  <label for="consequenceSolution">Quelle est la conséquence émotionnelle, neurologique ou logique de la solution réelle ? (exemple : “Expliquer ce que cette privation d’attention va provoquer comme émotion(s) chez l'homme et comment elle va influencer son comportement”)</label><br>
+  <label for="consequenceSolution">Question : quelle est la conséquence émotionnelle, neurologique ou logique de la solution réelle ?
+    Exemple : “Expliquer ce que cette privation d’attention va provoquer comme émotion(s) chez l'homme et comment elle va influencer son comportement”</label><br>
   <input type="text" id="consequenceSolution" name="consequenceSolution"><br>
   <br>
   <label for="CTA">Votre phrase d'appel à l'action, comprenant 1 ou 2 éléments de preuve sociale et 1 élément de scarcity</label><br>
   <input type="text" id="CTA" name="CTA"><br>
   <br>
   <button onclick="creerArgumentaire()">Créer l'argumentaire</button></label></label>
-  <p id="histoire"></p>
+  <p id="argumentaire"></p>
   <script>
     function creerArgumentaire() {
       var sousObjectifDeLaCible = document.getElementById("sousObjectifDeLaCible").value;
